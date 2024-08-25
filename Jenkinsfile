@@ -32,7 +32,8 @@ pipeline
                     emailext(to: "s224021028@deakin.edu.au",
                     subject: "6.1C Pipeline Status",
                     body: "Tests successful, see attached log for details",
-                    attachLog: true)
+                    attachLog: true,
+                    attachmentsPattern: "**/*.log")
                 }
                 failure 
                 {
