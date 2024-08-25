@@ -40,7 +40,8 @@ pipeline
                     emailext(to: "s224021028@deakin.edu.au",
                     subject: "6.1C Pipeline Status",
                     body: "Tests failed, see attached log for details",
-                    attachLog: true)
+                    attachLog: true,
+                    attachmentsPattern: "**/*.log")
                 }
             }
         }
@@ -72,14 +73,16 @@ pipeline
                     emailext(to: "s224021028@deakin.edu.au",
                     subject: "6.1C Pipeline Status",
                     body: "Security Scan successful, see attached log for details",
-                    attachLog: true)
+                    attachLog: true,
+                    attachmentsPattern: "**/*.log")
                 }
                 failure 
                 {
                     emailext(to: "s224021028@deakin.edu.au",
                     subject: "6.1C Pipeline Status",
                     body: "Security failed, see attached log for details",
-                    attachLog: true)
+                    attachLog: true,
+                    attachmentsPattern: "**/*.log")
                 }
             }
         }
