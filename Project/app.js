@@ -14,5 +14,5 @@ function toCelsius(f) {
   let value = toCelsius(77);
   document.getElementById("demo").innerHTML = value;   
 
-  let v = 100 / "Apple";
+  let m = 100 / "Apple";
   document.getElementById("demo").innerHTML = isNaN(x);
